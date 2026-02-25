@@ -17,59 +17,55 @@ PROJECT DESCRIPTION
 
 The Palindrome Checker App is a console-based Java application
 designed to validate whether a given string is a palindrome
-using a singly linked list.
+using a recursive approach.
 
-This use case demonstrates an advanced palindrome validation
-technique by converting a string into a linked list, locating
-the middle using fast and slow pointers, reversing the second
-half in place, and comparing both halves.
+This use case demonstrates how recursion can be used to solve
+problems by breaking them down into smaller subproblems and
+leveraging the call stack for execution.
 
 The project strengthens core Java programming fundamentals
-and data structure concepts such as:
+and algorithmic thinking concepts such as:
 
 - Class structure
 - main() method
 - Static keyword
 - Console input using Scanner
-- Singly linked list
-- Node traversal
-- Fast and slow pointer technique
-- In-place list reversal
+- Recursion
+- Base condition
+- Call stack behavior
 - Logical comparison
 - Application flow control
 - JavaDoc documentation standards
 
-This implementation covers Use Case 8:
-Linked List Based Palindrome Checker.
+This implementation covers Use Case 9:
+Recursive Palindrome Checker.
 
 ============================================================
 
-USE CASE 8: LINKED LIST BASED PALINDROME CHECKER
+USE CASE 9: RECURSIVE PALINDROME CHECKER
 
 At this stage, the application:
 
 - Accepts user input from the console
-- Converts the input string into a singly linked list
-- Uses fast and slow pointers to find the middle of the list
-- Reverses the second half of the linked list in place
-- Compares the first and second halves
+- Uses recursion to compare characters from start and end
+- Applies a base condition to terminate recursion
+- Utilizes the call stack to manage recursive calls
 - Displays whether the string is a palindrome or not
 
 ============================================================
 
 KEY CONCEPTS USED
 
-- **Singly Linked List** – A dynamic data structure using node references
-- **Node Traversal** – Sequential access using next pointers
-- **Fast and Slow Pointer Technique** – Efficient middle detection
-- **In-Place Reversal** – Reverses the list without extra memory
-- **Logical Comparison** – Validates palindrome by matching node values
+- **Recursion** – A method calling itself to solve smaller subproblems
+- **Base Condition** – Terminates recursion and prevents infinite calls
+- **Call Stack** – Manages method execution during recursive calls
+- **Logical Comparison** – Validates palindrome by matching characters
 
 ============================================================
 
 DATA STRUCTURE USED
 
-- Singly Linked List
+- Call Stack
 
 ============================================================
 
@@ -85,7 +81,7 @@ PROJECT STRUCTURE
 
 PalindromeCheckerApp/
 |
-|-- UseCase8PalindromeCheckerApp.java
+|-- UseCase9PalindromeCheckerApp.java
 |-- README.md
 
 ============================================================
@@ -101,23 +97,23 @@ cd Desktop\PalindromeCheckerApp
 
 Step 3: Compile the program
 
-javac UseCase8PalindromeCheckerApp.java
+javac UseCase9PalindromeCheckerApp.java
 
 Step 4: Run the program
 
-java UseCase8PalindromeCheckerApp
+java UseCase9PalindromeCheckerApp
 
 ============================================================
 
 EXPECTED OUTPUT
 
-When the program is executed, it checks whether the given
-string is a palindrome using singly linked list logic.
+When the program is executed, it recursively compares characters
+from both ends of the string to validate palindrome logic.
 
 Example 1:
 
 Input:
-Enter a string: refer
+Enter a string: civic
 
 Output:
 Palindrome
@@ -127,7 +123,7 @@ Palindrome
 Example 2:
 
 Input:
-Enter a string: linkedlist
+Enter a string: recursion
 
 Output:
 Not a Palindrome
