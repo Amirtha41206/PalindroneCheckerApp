@@ -17,61 +17,56 @@ PROJECT DESCRIPTION
 
 The Palindrome Checker App is a console-based Java application
 designed to validate whether a given string is a palindrome
-using both Queue and Stack data structures.
+using a Deque (Double Ended Queue).
 
-This use case demonstrates the behavioral difference between
-FIFO (First In First Out) and LIFO (Last In First Out) data
-structures and how they can be used together to validate
-palindrome logic.
+This use case demonstrates an optimized palindrome checking
+approach by directly comparing characters from the front and
+rear of the deque without using separate reversal structures.
 
 The project strengthens core Java programming fundamentals
-and data structure concepts such as:
+and advanced data structure concepts such as:
 
 - Class structure
 - main() method
 - Static keyword
 - Console input using Scanner
-- Queue data structure (FIFO)
-- Stack data structure (LIFO)
-- Enqueue and Dequeue operations
-- Push and Pop operations
+- Deque data structure
+- Front and rear access
+- Optimized data handling
 - Logical comparison
 - Application flow control
 - JavaDoc documentation standards
 
-This implementation covers Use Case 6:
-Queue + Stack Based Palindrome Check.
+This implementation covers Use Case 7:
+Deque-Based Optimized Palindrome Checker.
 
 ============================================================
 
-USE CASE 6: QUEUE + STACK BASED PALINDROME CHECK
+USE CASE 7: DEQUE-BASED OPTIMIZED PALINDROME CHECKER
 
 At this stage, the application:
 
 - Accepts user input from the console
-- Enqueues characters into a Queue (FIFO)
-- Pushes characters into a Stack (LIFO)
-- Compares dequeue output with pop output
-- Validates palindrome based on character matching
-- Displays whether the string is a palindrome or not
+- Inserts characters into a Deque
+- Removes characters from both front and rear
+- Compares characters directly without reversal
+- Determines whether the string is a palindrome
+- Displays the result
 
 ============================================================
 
 KEY CONCEPTS USED
 
-- **Queue** – A linear data structure that follows the FIFO principle
-- **Enqueue & Dequeue Operations** – Used to insert and remove elements from the queue
-- **Stack** – A linear data structure that follows the LIFO principle
-- **Push & Pop Operations** – Used to insert and remove elements from the stack
-- **Stack vs Queue** – Demonstrates behavioral differences between LIFO and FIFO
-- **Logical Comparison** – Matching dequeue and pop values for palindrome validation
+- **Deque (Double Ended Queue)** – Allows insertion and deletion from both front and rear
+- **Front and Rear Access** – Enables direct comparison of first and last characters
+- **Optimized Data Handling** – Eliminates the need for extra reversal data structures
+- **Logical Comparison** – Efficient palindrome validation
 
 ============================================================
 
-DATA STRUCTURES USED
+DATA STRUCTURE USED
 
-- Queue
-- Stack
+- Deque
 
 ============================================================
 
@@ -87,7 +82,7 @@ PROJECT STRUCTURE
 
 PalindromeCheckerApp/
 |
-|-- UseCase6PalindromeCheckerApp.java
+|-- UseCase7PalindromeCheckerApp.java
 |-- README.md
 
 ============================================================
@@ -103,23 +98,23 @@ cd Desktop\PalindromeCheckerApp
 
 Step 3: Compile the program
 
-javac UseCase6PalindromeCheckerApp.java
+javac UseCase7PalindromeCheckerApp.java
 
 Step 4: Run the program
 
-java UseCase6PalindromeCheckerApp
+java UseCase7PalindromeCheckerApp
 
 ============================================================
 
 EXPECTED OUTPUT
 
-When the program is executed, it compares characters using
-Queue (FIFO) and Stack (LIFO) to validate palindrome logic.
+When the program is executed, it compares characters from
+the front and rear of the deque to validate palindrome logic.
 
 Example 1:
 
 Input:
-Enter a string: radar
+Enter a string: racecar
 
 Output:
 Palindrome
@@ -129,7 +124,7 @@ Palindrome
 Example 2:
 
 Input:
-Enter a string: queue
+Enter a string: deque
 
 Output:
 Not a Palindrome
