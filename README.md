@@ -17,11 +17,12 @@ PROJECT DESCRIPTION
 
 The Palindrome Checker App is a console-based Java application
 designed to validate whether a given string is a palindrome
-using a stack-based approach.
+using both Queue and Stack data structures.
 
-This implementation uses the LIFO (Last In First Out) property
-of the Stack data structure to reverse the string and compare
-it with the original input.
+This use case demonstrates the behavioral difference between
+FIFO (First In First Out) and LIFO (Last In First Out) data
+structures and how they can be used together to validate
+palindrome logic.
 
 The project strengthens core Java programming fundamentals
 and data structure concepts such as:
@@ -30,42 +31,46 @@ and data structure concepts such as:
 - main() method
 - Static keyword
 - Console input using Scanner
-- Stack data structure
+- Queue data structure (FIFO)
+- Stack data structure (LIFO)
+- Enqueue and Dequeue operations
 - Push and Pop operations
-- Looping constructs
-- String comparison using equals()
+- Logical comparison
 - Application flow control
 - JavaDoc documentation standards
 
-This implementation covers Use Case 5:
-Stack-Based Palindrome Checker.
+This implementation covers Use Case 6:
+Queue + Stack Based Palindrome Check.
 
 ============================================================
 
-USE CASE 5: STACK-BASED PALINDROME CHECKER
+USE CASE 6: QUEUE + STACK BASED PALINDROME CHECK
 
 At this stage, the application:
 
 - Accepts user input from the console
-- Pushes each character of the string into a stack
-- Pops characters from the stack to reverse the string
-- Compares the original and reversed strings
+- Enqueues characters into a Queue (FIFO)
+- Pushes characters into a Stack (LIFO)
+- Compares dequeue output with pop output
+- Validates palindrome based on character matching
 - Displays whether the string is a palindrome or not
 
 ============================================================
 
 KEY CONCEPTS USED
 
-- **Stack** – A linear data structure that follows the Last In First Out (LIFO) principle
-- **Push Operation** – Used to insert characters into the stack
-- **Pop Operation** – Used to remove characters from the stack in reverse order
-- **Reversal Logic** – Stack naturally reverses the order of elements
-- **String Comparison** – equals() method for content comparison
+- **Queue** – A linear data structure that follows the FIFO principle
+- **Enqueue & Dequeue Operations** – Used to insert and remove elements from the queue
+- **Stack** – A linear data structure that follows the LIFO principle
+- **Push & Pop Operations** – Used to insert and remove elements from the stack
+- **Stack vs Queue** – Demonstrates behavioral differences between LIFO and FIFO
+- **Logical Comparison** – Matching dequeue and pop values for palindrome validation
 
 ============================================================
 
-DATA STRUCTURE USED
+DATA STRUCTURES USED
 
+- Queue
 - Stack
 
 ============================================================
@@ -82,7 +87,7 @@ PROJECT STRUCTURE
 
 PalindromeCheckerApp/
 |
-|-- UseCase5PalindromeCheckerApp.java
+|-- UseCase6PalindromeCheckerApp.java
 |-- README.md
 
 ============================================================
@@ -98,24 +103,23 @@ cd Desktop\PalindromeCheckerApp
 
 Step 3: Compile the program
 
-javac UseCase5PalindromeCheckerApp.java
+javac UseCase6PalindromeCheckerApp.java
 
 Step 4: Run the program
 
-java UseCase5PalindromeCheckerApp
+java UseCase6PalindromeCheckerApp
 
 ============================================================
 
 EXPECTED OUTPUT
 
-When the program is executed, it prompts the user to enter a string
-and validates whether the string is a palindrome using stack-based
-reversal logic.
+When the program is executed, it compares characters using
+Queue (FIFO) and Stack (LIFO) to validate palindrome logic.
 
 Example 1:
 
 Input:
-Enter a string: madam
+Enter a string: radar
 
 Output:
 Palindrome
@@ -125,7 +129,7 @@ Palindrome
 Example 2:
 
 Input:
-Enter a string: stack
+Enter a string: queue
 
 Output:
 Not a Palindrome
