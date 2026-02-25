@@ -9,14 +9,15 @@ VERSION:
 1.0
 
 AUTHOR:
-Amirtha S S 
+Amirtha S S
 
-============================================================
+===========================================================
 
 PROJECT DESCRIPTION
 
 The Palindrome Checker App is a console-based Java application
-designed to validate whether a given string is a palindrome.
+designed to validate whether a given string is a palindrome
+by reversing the string using a loop.
 
 This project is developed to strengthen core Java programming
 fundamentals such as:
@@ -24,32 +25,35 @@ fundamentals such as:
 - Class structure
 - main() method
 - Static keyword
-- Console output
+- Console input using Scanner
+- For loop
+- String immutability
+- String concatenation
+- equals() method
 - Application flow control
 - JavaDoc documentation standards
 
-Currently, only Use Case 1 (Application Entry & Welcome Message)
-is implemented.
-
-No palindrome logic is included yet.
+This implementation covers Use Case 3:
+Palindrome Check Using String Reverse.
 
 ============================================================
 
-USE CASE 1: APPLICATION ENTRY & WELCOME MESSAGE
+USE CASE 3: PALINDROME CHECK USING STRING REVERSE
 
 At this stage, the application:
 
-- Starts execution from the main() method
-- Displays the application name
-- Displays application version
-- Shows a welcome message
-- Establishes a clear startup structure
+- Accepts user input from the console
+- Reverses the string using a for loop
+- Builds a new reversed string using concatenation (+)
+- Compares original and reversed strings using equals()
+- Displays whether the string is a palindrome or not
 
 ============================================================
 
 TECHNOLOGIES USED
 
 - Java
+- IntelliJ IDEA
 - Command Line Interface (CLI)
 
 ============================================================
@@ -58,7 +62,7 @@ PROJECT STRUCTURE
 
 PalindromeCheckerApp/
 |
-|-- UseCase1PalindromeCheckerApp.java
+|-- UseCase3PalindromeCheckerApp.java
 |-- README.md
 
 ============================================================
@@ -74,40 +78,12 @@ cd Desktop\PalindromeCheckerApp
 
 Step 3: Compile the program
 
-javac UseCase1PalindromeCheckerApp.java
+javac UseCase3PalindromeCheckerApp.java
 
 Step 4: Run the program
 
-java UseCase1PalindromeCheckerApp
+java UseCase3PalindromeCheckerApp
 
 ============================================================
 
 EXPECTED OUTPUT
-
-``` =================================================
-PALINDROME CHECKER MANAGEMENT SYSTEM
-=================================================
-Application Name : Palindrome Checker App
-Version          : 1.0
-Status           : Application Started
-=================================================
-Welcome to the Palindrome Checker Application!
-=================================================
-
-============================================================
-
-FUTURE ENHANCEMENTS
-
-- Accept user input
-- Implement palindrome checking logic
-- Case-insensitive comparison
-- Ignore spaces and special characters
-- Menu-driven console interface
-- Error handling
-- Unit testing
-
-============================================================
-```
-
-END OF DOCUMENT
-============================================================
