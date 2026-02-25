@@ -17,39 +17,56 @@ PROJECT DESCRIPTION
 
 The Palindrome Checker App is a console-based Java application
 designed to validate whether a given string is a palindrome
-by converting the string into a character array and comparing
-characters using the two-pointer technique.
+using a stack-based approach.
 
-This project is developed to strengthen core Java programming
-fundamentals and data structure concepts such as:
+This implementation uses the LIFO (Last In First Out) property
+of the Stack data structure to reverse the string and compare
+it with the original input.
+
+The project strengthens core Java programming fundamentals
+and data structure concepts such as:
 
 - Class structure
 - main() method
 - Static keyword
 - Console input using Scanner
-- Character arrays (char[])
-- Array indexing
-- Two-pointer technique
+- Stack data structure
+- Push and Pop operations
 - Looping constructs
-- Conditional statements
-- Time complexity awareness
+- String comparison using equals()
 - Application flow control
 - JavaDoc documentation standards
 
-This implementation covers Use Case 4:
-Character Array Based Palindrome Check.
+This implementation covers Use Case 5:
+Stack-Based Palindrome Checker.
 
 ============================================================
 
-USE CASE 4: CHARACTER ARRAY BASED PALINDROME CHECK
+USE CASE 5: STACK-BASED PALINDROME CHECKER
 
 At this stage, the application:
 
 - Accepts user input from the console
-- Converts the input string into a character array (char[])
-- Uses two pointers to compare characters from start and end
-- Stops comparison early if a mismatch is found
+- Pushes each character of the string into a stack
+- Pops characters from the stack to reverse the string
+- Compares the original and reversed strings
 - Displays whether the string is a palindrome or not
+
+============================================================
+
+KEY CONCEPTS USED
+
+- **Stack** – A linear data structure that follows the Last In First Out (LIFO) principle
+- **Push Operation** – Used to insert characters into the stack
+- **Pop Operation** – Used to remove characters from the stack in reverse order
+- **Reversal Logic** – Stack naturally reverses the order of elements
+- **String Comparison** – equals() method for content comparison
+
+============================================================
+
+DATA STRUCTURE USED
+
+- Stack
 
 ============================================================
 
@@ -61,17 +78,11 @@ TECHNOLOGIES USED
 
 ============================================================
 
-DATA STRUCTURE USED
-
-- Character Array (char[])
-
-============================================================
-
 PROJECT STRUCTURE
 
 PalindromeCheckerApp/
 |
-|-- UseCase4PalindromeCheckerApp.java
+|-- UseCase5PalindromeCheckerApp.java
 |-- README.md
 
 ============================================================
@@ -87,24 +98,24 @@ cd Desktop\PalindromeCheckerApp
 
 Step 3: Compile the program
 
-javac UseCase4PalindromeCheckerApp.java
+javac UseCase5PalindromeCheckerApp.java
 
 Step 4: Run the program
 
-java UseCase4PalindromeCheckerApp
+java UseCase5PalindromeCheckerApp
 
 ============================================================
 
 EXPECTED OUTPUT
 
 When the program is executed, it prompts the user to enter a string
-and checks whether the entered string is a palindrome using the
-character array and two-pointer approach.
+and validates whether the string is a palindrome using stack-based
+reversal logic.
 
 Example 1:
 
 Input:
-Enter a string: level
+Enter a string: madam
 
 Output:
 Palindrome
@@ -114,7 +125,7 @@ Palindrome
 Example 2:
 
 Input:
-Enter a string: programming
+Enter a string: stack
 
 Output:
 Not a Palindrome
