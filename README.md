@@ -17,55 +17,55 @@ PROJECT DESCRIPTION
 
 The Palindrome Checker App is a console-based Java application
 designed to validate whether a given string is a palindrome
-using a recursive approach.
+while ignoring spaces and case differences.
 
-This use case demonstrates how recursion can be used to solve
-problems by breaking them down into smaller subproblems and
-leveraging the call stack for execution.
+This use case demonstrates string preprocessing techniques
+such as normalization using regular expressions and applying
+previous palindrome validation logic on the processed input.
 
 The project strengthens core Java programming fundamentals
-and algorithmic thinking concepts such as:
+and string handling concepts such as:
 
 - Class structure
 - main() method
 - Static keyword
 - Console input using Scanner
-- Recursion
-- Base condition
-- Call stack behavior
-- Logical comparison
+- String preprocessing
+- Regular expressions
+- Case normalization
+- Two-pointer comparison technique
 - Application flow control
 - JavaDoc documentation standards
 
-This implementation covers Use Case 9:
-Recursive Palindrome Checker.
+This implementation covers Use Case 10:
+Case-Insensitive & Space-Ignored Palindrome Checker.
 
 ============================================================
 
-USE CASE 9: RECURSIVE PALINDROME CHECKER
+USE CASE 10: CASE-INSENSITIVE & SPACE-IGNORED PALINDROME CHECKER
 
 At this stage, the application:
 
 - Accepts user input from the console
-- Uses recursion to compare characters from start and end
-- Applies a base condition to terminate recursion
-- Utilizes the call stack to manage recursive calls
+- Removes all spaces using regular expressions
+- Converts characters to lowercase
+- Applies palindrome checking logic on normalized string
 - Displays whether the string is a palindrome or not
 
 ============================================================
 
 KEY CONCEPTS USED
 
-- **Recursion** – A method calling itself to solve smaller subproblems
-- **Base Condition** – Terminates recursion and prevents infinite calls
-- **Call Stack** – Manages method execution during recursive calls
-- **Logical Comparison** – Validates palindrome by matching characters
+- **String Preprocessing** – Cleaning and normalizing input data
+- **Regular Expressions** – Removing spaces from the string
+- **Case Normalization** – Converting characters to lowercase
+- **Logical Comparison** – Validating palindrome after preprocessing
 
 ============================================================
 
 DATA STRUCTURE USED
 
-- Call Stack
+- String / Array
 
 ============================================================
 
@@ -81,7 +81,7 @@ PROJECT STRUCTURE
 
 PalindromeCheckerApp/
 |
-|-- UseCase9PalindromeCheckerApp.java
+|-- UseCase10PalindromeCheckerApp.java
 |-- README.md
 
 ============================================================
@@ -97,23 +97,23 @@ cd Desktop\PalindromeCheckerApp
 
 Step 3: Compile the program
 
-javac UseCase9PalindromeCheckerApp.java
+javac UseCase10PalindromeCheckerApp.java
 
 Step 4: Run the program
 
-java UseCase9PalindromeCheckerApp
+java UseCase10PalindromeCheckerApp
 
 ============================================================
 
 EXPECTED OUTPUT
 
-When the program is executed, it recursively compares characters
-from both ends of the string to validate palindrome logic.
+When the program is executed, it ignores spaces and case
+while validating whether the given string is a palindrome.
 
 Example 1:
 
 Input:
-Enter a string: civic
+Enter a string: Never Odd Or Even
 
 Output:
 Palindrome
@@ -123,7 +123,7 @@ Palindrome
 Example 2:
 
 Input:
-Enter a string: recursion
+Enter a string: Hello World
 
 Output:
 Not a Palindrome
